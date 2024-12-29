@@ -9,6 +9,7 @@ completedColumns:
 
 ## Backlog
 
+- [setup-netlify](tasks/setup-netlify.md)
 - [add-basic-webpage](tasks/add-basic-webpage.md)
 - [setup-auth](tasks/setup-auth.md)
 - [define-recipe-kdl-format](tasks/define-recipe-kdl-format.md)
