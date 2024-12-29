@@ -1,3 +1,4 @@
+use recipe_book::*;
 use yew::prelude::*;
 
 #[cfg(target_family = "wasm")]
