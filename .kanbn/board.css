@@ -1,0 +1,4 @@
+
+.kanbn-task-data-created,.kanbn-task-data-updated,.kanbn-task-data-completed,.kanbn-task-progress,.kanbn-task-data-workload {
+	display: none;
+}
