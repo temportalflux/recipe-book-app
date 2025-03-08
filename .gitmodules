@@ -1,0 +1,3 @@
+[submodule "modules/recipes"]
+	path = modules/recipes
+	url = git@github.com:temportalflux/recipes.git
