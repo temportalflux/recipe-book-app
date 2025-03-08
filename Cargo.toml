@@ -1,7 +1,7 @@
 [package]
-name = "recipe-book"
+name = "recipe-book-app"
 description = ""
-repository = "https://github.com/temportalflux/recipe-book/"
+repository = "https://github.com/temportalflux/recipe-book-app"
 license = "MIT OR Apache-2.0"
 authors = ["Dustin Yost <dustin.yost.t@gmail.com>"]
 version = "0.0.1"
@@ -12,16 +12,20 @@ edition = "2021"
 doctest = false
 
 [dependencies]
-#kdlize = { path = "crates/kdlize" }
 #netlify-oauth = { path = "crates/netlify-oauth" }
 #github = { path = "crates/github" }
 #database = { path = "crates/database" }
+
+recipe-book = { path = "crates/recipe-book" }
+kdlize = { path = "crates/kdlize" }
+kdl = { git = "https://github.com/kdl-org/kdl-rs", features=["v1", "v1-fallback"] }
+
 any-range = "0.1"
 wasm-bindgen = "^0.2"
 log = { version = "0.4", features = ["std"] }
 yew = { version = "0.21", features = ["csr"] }
 yew-router = { version = "0.18" }
-yewdux = "0.10"
+yewdux = "0.11"
 gloo-events = "0.2"
 gloo-storage = "0.3"
 gloo-utils = "0.2"
@@ -40,7 +44,7 @@ web-sys = { version = "^0.3", features = [
 wasm-bindgen-futures = "^0.4"
 futures = "0.3"
 # blocked by crates/github graphql_client needing 0.15 (https://github.com/graphql-rust/graphql-client/pull/490)
-reqwest = { version = "0.11", features = ["json"] }
+reqwest = { version = "0.12", features = ["json"] }
 serde = "1.0"
 serde_json = "1.0"
 anyhow = "1.0"
@@ -55,19 +59,19 @@ fluvio-wasm-timer = "0.2"
 enumset = "1.0"
 multimap = "0.10"
 enum-map = "2.6"
-convert_case = "0.6"
+convert_case = "0.8"
 dyn-clone = "1.0"
 uuid = { version = "1.3", features = ["v4", "js"] }
 num-traits = "0.2"
 simplelog = "0.12"
 time = "0.3"
-downcast-rs = "1.2"
+downcast-rs = "2"
 async-channel = "2.2"
 derivative = "2.2"
 enum_from_str = "0.1"
 enum_from_str_derive = "0.1"
 derive_more = { version = ">=1.0", features=["full"] }
-itertools = "0.13"
+itertools = "0.14"
 phf = { version = "0.11", features = ["macros"] }
 idb = "0.6"
 serde-wasm-bindgen = "0.6"
@@ -75,7 +79,7 @@ js-sys = "0.3"
 futures-util = "0.3"
 lazy_static = "1.4"
 unzip-n = "0.1"
-rand = "0.8"
+rand = "0.9"
 wasm-timer = "0.2"
 regex = "1.8"
 graphql_client = { version = "0.14", features = ["reqwest"] }

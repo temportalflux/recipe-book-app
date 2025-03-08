@@ -1,3 +1,9 @@
 [submodule "modules/recipes"]
 	path = modules/recipes
 	url = git@github.com:temportalflux/recipes.git
+[submodule "crates/kdlize"]
+	path = crates/kdlize
+	url = git@github.com:temportalflux/kdlize.git
+[submodule "crates/recipe-book"]
+	path = crates/recipe-book
+	url = git@github.com:temportalflux/recipe-book.git
